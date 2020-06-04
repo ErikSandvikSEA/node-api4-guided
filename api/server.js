@@ -9,7 +9,8 @@ server.use(helmet());
 
 server.get('/', function(req, res){
      res.status(200).json({
-          environment: process.env.NODE_ENV
+          environment: process.env.NODE_ENV,
+          port: process.env.PORT
      })
 })
 
